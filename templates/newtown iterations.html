@@ -1,0 +1,138 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>{% block title %} RPG Town Generator {% endblock %}</h1>
+
+    {% for list, items in ShopType.items() %}
+       <div class="card group" style="width: 35rem">
+            <div class="card-header">
+                <table>
+                  <h3>{{ list }}</h3>
+                    <tr>
+                    <th class="text-start">Item Name</th>
+                    <th class="text-end">Cost</th>
+                    </tr>
+            </div>
+            <ul class="list-group list-group-flush">
+                {% for item in items %}
+                  {% if loop.index <= 10 %}
+                <table>
+                  <tr>
+                    <td class="text-start">{{ item['ItemName'] }}</td>
+                    <td class="text-end">{{ item['CostExpensive'] }}</td>
+                  </tr>
+                </table>
+                  {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+
+
+
+2.0
+
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>{% block title %} RPG Town Generator {% endblock %}</h1>
+    <hr class="divider" />
+    <h2>Town Name: </h2>
+    {% for townNames in townNames %}
+      <strong>{{ townNames[1] }}</strong>
+    {% endfor %}
+
+    {% for list, items in ShopType.items() %}
+       <div class="container" style="width: 35rem">
+                <table>
+                  <h3>{{ list }}</h3>
+                    <tr>
+                    <th class="text-start">Item Name</th>
+                    <th class="text-end">Cost</th>
+                    </tr>
+            </div>
+                {% for item in items %}
+                  {% if loop.index <= 10 %}
+                <table>
+                  <tr>
+                    <td class="text-start">{{ item['ItemName'] }}</td>
+                    <td class="text-end">{{ item['CostExpensive'] }}</td>
+                  </tr>
+                </table>
+                  {% endif %}
+                {% endfor %}
+                <hr class="divider" />
+            </ul>
+        </div>
+    {% endfor %}
+{% endblock %}
+3.0
+
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>{% block title %} RPG Town Generator {% endblock %}</h1>
+    <hr class="divider" />
+    <h2>Town Name: </h2>
+    {% for townNames in townNames %}
+      <strong>{{ townNames[1] }}</strong>
+    {% endfor %}
+
+    {% for list, items in ShopType.items() %}
+       <div class="container" style="width: 35rem">
+                <table>
+                  <h3>{{ list }}</h3>
+                    <tr>
+                    <th class="text-start">Item Name</th>
+                    <th class="text-end">Cost</th>
+                    </tr>
+            </div>
+                {% for item in items %}
+                <table>
+                  <tr>
+                    <td class="text-start">{{ item['ItemName'] }}</td>
+                    <td class="text-end">{{ item['CostExpensive'] }}</td>
+                  </tr>
+                </table>
+                {% endfor %}
+                <hr class="divider" />
+            </ul>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+4.0
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>{% block title %} RPG Town Generator {% endblock %}</h1>
+    <hr class="divider" />
+    <h2>Town Name: </h2>
+    {% for townNames in townNames %}
+      <strong>{{ townNames[1] }}</strong>
+    {% endfor %}
+
+    {% for list, items in ShopType.items() %}
+       <div class="container" style="width: 35rem">
+                <table>
+                  <h3>{{ list }}</h3>
+                    <tr>
+                    <th class="text-start">Item Name</th>
+                    <th class="text-end">Cost</th>
+                    </tr>
+            </div>
+                {% for item in items %}
+                <table>
+                  <tr>
+                    <td class="text-start">{{ item['ItemName'] }}</td>
+                    <td class="text-end">{{ item['CostExpensive'] }}</td>
+                  </tr>
+                </table>
+                {% endfor %}
+                <hr class="divider" />
+            </ul>
+        </div>
+    {% endfor %}
+{% endblock %}

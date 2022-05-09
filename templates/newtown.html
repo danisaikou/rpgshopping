@@ -1,0 +1,242 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>{% block title %} RPG Town Generator {% endblock %}</h1>
+    <hr class="divider" />
+    <h2>Town Name: </h2>
+    {% for townNames in townNames %}
+      <strong>{{ townNames[1] }}</strong>
+    {% endfor %}
+
+<!-- Adventuring Supplies -->
+       <div class="container" style="width: 35rem">
+                <table>
+                  <h3>Adventuring Supplies</h3>
+                    <tr>
+                    <th class="text-start">Item Name</th>
+                    <th class="text-end">Cost</th>
+                    </tr>
+            </div>
+                {% for item in adventuringsupplies %}
+                <table>
+                  <tr>
+                    <td class="text-start">{{ item['ItemName'] }}</td>
+                    <td class="text-end">{{ item['CostStandard'] }}</td>
+                  </tr>
+                </table>
+                {% endfor %}
+                <hr class="divider" />
+            </ul>
+        </div>
+
+<!-- Arcane Shop-->
+        <div class="container" style="width: 35rem">
+          <table>
+            <h3>Arcane Shop</h3>
+              <tr>
+              <th class="text-start">Item Name</th>
+              <th class="text-end">Cost</th>
+              </tr>
+      </div>
+          {% for item in arcaneshop %}
+          <table>
+            <tr>
+              <td class="text-start">{{ item['ItemName'] }}</td>
+              <td class="text-end">{{ item['CostStandard'] }}</td>
+            </tr>
+          </table>
+          {% endfor %}
+          <hr class="divider" />
+      </ul>
+  </div>
+
+<!-- Armory -->
+<div class="container" style="width: 35rem">
+  <table>
+    <h3>Armory</h3>
+      <tr>
+      <th class="text-start">Item Name</th>
+      <th class="text-end">Cost</th>
+      </tr>
+</div>
+  {% for item in armory %}
+  <table>
+    <tr>
+      <td class="text-start">{{ item['ItemName'] }}</td>
+      <td class="text-end">{{ item['CostStandard'] }}</td>
+    </tr>
+  </table>
+  {% endfor %}
+  <hr class="divider" />
+</ul>
+</div>
+
+<!-- Blacksmith -->
+<div class="container" style="width: 35rem">
+  <table>
+    <h3>Blacksmith</h3>
+      <tr>
+      <th class="text-start">Item Name</th>
+      <th class="text-end">Cost</th>
+      </tr>
+</div>
+  {% for item in blacksmith %}
+  <table>
+    <tr>
+      <td class="text-start">{{ item['ItemName'] }}</td>
+      <td class="text-end">{{ item['CostStandard'] }}</td>
+    </tr>
+  </table>
+  {% endfor %}
+  <hr class="divider" />
+</ul>
+</div>
+
+<!-- Fletcher -->
+<div class="container" style="width: 35rem">
+  <table>
+    <h3>Fletcher</h3>
+      <tr>
+      <th class="text-start">Item Name</th>
+      <th class="text-end">Cost</th>
+      </tr>
+</div>
+  {% for item in fletcher %}
+  <table>
+    <tr>
+      <td class="text-start">{{ item['ItemName'] }}</td>
+      <td class="text-end">{{ item['CostStandard'] }}</td>
+    </tr>
+  </table>
+  {% endfor %}
+  <hr class="divider" />
+</ul>
+</div>
+
+<!-- Food Market -->
+<div class="container" style="width: 35rem">
+  <table>
+    <h3>Food Market</h3>
+      <tr>
+      <th class="text-start">Item Name</th>
+      <th class="text-end">Cost</th>
+      </tr>
+</div>
+  {% for item in foodmarket %}
+  <table>
+    <tr>
+      <td class="text-start">{{ item['ItemName'] }}</td>
+      <td class="text-end">{{ item['CostStandard'] }}</td>
+    </tr>
+  </table>
+  {% endfor %}
+  <hr class="divider" />
+</ul>
+</div>
+
+<!-- General Store -->
+<div class="container" style="width: 35rem">
+  <table>
+    <h3>General Store</h3>
+      <tr>
+      <th class="text-start">Item Name</th>
+      <th class="text-end">Cost</th>
+      </tr>
+</div>
+  {% for item in generalstore %}
+  <table>
+    <tr>
+      <td class="text-start">{{ item['ItemName'] }}</td>
+      <td class="text-end">{{ item['CostStandard'] }}</td>
+    </tr>
+  </table>
+  {% endfor %}
+  <hr class="divider" />
+</ul>
+</div>
+
+<!-- Inn -->
+<div class="container" style="width: 35rem">
+  <table>
+    <h3>Inn</h3>
+      <tr>
+      <th class="text-start">Item Name</th>
+      <th class="text-end">Cost</th>
+      </tr>
+</div>
+  {% for item in inn %}
+  <table>
+    <tr>
+      <td class="text-start">{{ item['ItemName'] }}</td>
+      <td class="text-end">{{ item['CostStandard'] }}</td>
+    </tr>
+  </table>
+  {% endfor %}
+  <hr class="divider" />
+</ul>
+</div>
+
+<!-- Potions -->
+<div class="container" style="width: 35rem">
+  <table>
+    <h3>Potions</h3>
+      <tr>
+      <th class="text-start">Item Name</th>
+      <th class="text-end">Cost</th>
+      </tr>
+</div>
+  {% for item in potions %}
+  <table>
+    <tr>
+      <td class="text-start">{{ item['ItemName'] }}</td>
+      <td class="text-end">{{ item['CostStandard'] }}</td>
+    </tr>
+  </table>
+  {% endfor %}
+  <hr class="divider" />
+</ul>
+</div>
+
+<!-- Temple -->
+<div class="container" style="width: 35rem">
+  <table>
+    <h3>Temple / Shrine</h3>
+      <tr>
+      <th class="text-start">Item Name</th>
+      <th class="text-end">Cost</th>
+      </tr>
+</div>
+  {% for item in temple %}
+  <table>
+    <tr>
+      <td class="text-start">{{ item['ItemName'] }}</td>
+      <td class="text-end">{{ item['CostStandard'] }}</td>
+    </tr>
+  </table>
+  {% endfor %}
+  <hr class="divider" />
+</ul>
+</div>
+
+<!-- Transport -->
+<div class="container" style="width: 35rem">
+  <table>
+    <h3>Transportation</h3>
+      <tr>
+      <th class="text-start">Item Name</th>
+      <th class="text-end">Cost</th>
+      </tr>
+</div>
+  {% for item in transport %}
+  <table>
+    <tr>
+      <td class="text-start">{{ item['ItemName'] }}</td>
+      <td class="text-end">{{ item['CostStandard'] }}</td>
+    </tr>
+  </table>
+  {% endfor %}
+  <hr class="divider" />
+</ul>
+</div>
+
+{% endblock %}

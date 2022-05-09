@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+  <h1>{% block title %} Home {% endblock %} </h1>
+
+{% block content %}
+
+<!-- Top -->
+<header class="masthead">
+  <div class="container px-4 px-lg-5 h-100">
+      <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+          <div class="col-lg-8 align-self-end">
+              <h1 class="text-black font-weight-bold">The RPG Shopping District</h1>
+              <hr class="divider" />
+          </div>
+          <div class="col-lg-8 align-self-baseline">
+              <p class="text-black-75 mb-5">Are you a Dungeon Master with a group of players who want to go shopping in every village, town, and city that they pass through? Tired of wracking your brain trying to open up various generators for Shop Names, Shop Types, and the all-important Shop Inventories with appropriate costs? You've come to the right place! </p>
+          </div>
+      </div>
+  </div>
+</header>
+
+<!-- Info and Link to Generate -->
+<section class="page-section bg-dark" id="about">
+    <div class="container px-4 px-lg-5">
+      <div class="bg">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 text-center">
+              <h3 class="text-white mt-0">Take your players on a shopping expedition!</h3>
+              <hr class="divider divider-light" />
+              <p class="text-white mb-4">With minimal input from you (just the size and alignment of the desired location) the RPG Shopping District will generate a fully formed list of shops including locale-appropriate inventory and item cost. </p>
+              <a class="btn btn-light btn-xl" href="{{ url_for('form') }}"">Get Started!</a>
+              <br>
+              <br>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<br>
+<br>
+<!-- What the Page Does -->
+<section class="page-section" id="stuff">
+  <div class="container px-4 px-lg-5">
+      <h2 class="text-center mt-0">Customizable Options</h2>
+      <hr class="divider" />
+      <div class="row gx-4 gx-lg-5">
+          <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                  <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                  <h3 class="h4 mb-2">Location Size</h3>
+                  <p class="text-muted mb-0">Our locations can be adjusted for rural, urban, or premium areas!</p>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                  <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                  <h3 class="h4 mb-2">Good vs Evil</h3>
+                  <p class="text-muted mb-0">Is your campaign full of shady locales with black market goods? We have you covered!</p>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                  <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                  <h3 class="h4 mb-2">Colorful Names</h3>
+                  <p class="text-muted mb-0">A huge database of shop names so your players are never bored!</p>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                  <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                  <h3 class="h4 mb-2">Ready to Use</h3>
+                  <p class="text-muted mb-0">No need to hunt down individual item prices, we have the latest 5e price guides pre-loaded!</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<br>
+<br>
+<!-- Footer-->
+<footer class="bg-dark py-5">
+  <div class="container"><div class="small text-center text-muted">Brought to you by the Gorkoh Cocoa Co. in partnership with Las Phandalin</div></div>
+</footer>
+
+
+</body>
+</html>
+
+{% endblock %}
